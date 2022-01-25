@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("this is first line of code <br>");
+       async function fun(){
+          document.write("Before Await... <br>");
+          var msg = await "with await...this print at last due to await";
+          document.write(msg); 
+        }
+        document.write("before function calling <br>");
+        fun();
+        document.write("after function calling <br>");
+        document.write("this is last line of code <br>");
+    </script>
+</body>
+</html>

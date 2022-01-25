@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variable Example</h1>
+    <script>
+        document.write("var example : ");
+        var a=10;
+        document.write("a="+a+"<br>");
+        if(true)
+        {
+            var a=2;
+            document.write("a="+a+"<br>");   //var keyword has functional scope...
+        }
+        document.write("a="+a+"<br>");
+
+        document.write("let example : ");
+        let b=20;
+        document.write("b="+b+"<br>");
+        if(true)
+        {
+            let b=102;
+            document.write("b="+b+"<br>");   //let keyword has block scope...
+        }
+        document.write("b="+b+"<br>");
+
+        document.write("const example : ");
+        const c=200;
+        document.write("c="+c+"<br>");
+        if(true)
+        {
+            const c=900;
+            document.write("c="+c+"<br>");   //const keyword has block scope...
+        }
+        document.write("c="+c+"<br>");
+
+    </script>
+</body>
+</html>

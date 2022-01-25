@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let person1 = {
+            name: "gaurav",
+            city: "abad",
+            phoneno: "123456"
+        };
+        document.write(person1.city);
+        let person2 = {
+            city: "mumbai"
+        };
+        person2.__proto__ = person1;
+        document.write("<br>" + person2.name);
+
+
+        function Person(first, last, age, eyecolor) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eyecolor;
+        }
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+        const myMother = new Person("Sally", "Rally", 48, "green");
+
+        Person.prototype.country="india";
+        document.write("<br>"+myFather.country);
+
+    </script>
+</body>
+
+</html>
